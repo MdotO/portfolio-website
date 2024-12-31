@@ -11,9 +11,9 @@ const config = {
     },
   },
   meta: {
-    title: 'Mark Freeman - Senior React Developer',
+    title: 'Omer Raza - Machine Learning Researcher & Engineer',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sodales ac dui at vestibulum. In condimentum metus id dui tincidunt, in blandit mi vehicula.',
+      'ML enthusiast with prime focus towards research and secondary focus towards ML Engineering & concommitant Software Engineering',
     faviconPath: '/src/assets/my-image.jpeg',
   },
   pdf: {
