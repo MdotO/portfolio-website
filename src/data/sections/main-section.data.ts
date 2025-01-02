@@ -1,6 +1,6 @@
 import type { MainSection } from '@/types/sections/main-section.types';
 import type { ReadonlyDeep } from 'type-fest';
-import { facebook, github, linkedin, twitter } from '../helpers/links';
+import { facebook, github, googleScholar, linkedin} from '../helpers/links';
 
 const mainSectionData = {
   config: {
@@ -21,14 +21,21 @@ const mainSectionData = {
   ],
 
   description:
-    ' Work in Porgress. Results-driven Machine Learning Engineer and Researcher with a robust background in Software Engineering. I have led and developed a range of machine learning projects and tools accompanied by backend and frontend solutions, like mobile apps. My professional journey is deeply rooted with ML research and publications, demonstrating a commitment to holistic professional growth and driving knowledge. With a passion for continuous learning and a drive for excellence, I am eager to contribute to cutting-edge ML research.',
+    '[WIP - Currently Working on Populating my website. Current Available content is accurate]'
+    /*Research-Oriented Machine Learning enthusiast with a robust background in Software Engineering and MLOps.\
+    Eager to contribute to cutting-edge ML research.\
+    \nFeel free to connect on my social networks,collaborate or just geek out over ML in general!'*/,
   tags: [{ name: 'Open for Research collaboration' }, { name: 'Machine Learning' }, { name: 'Artificial Intelligence' }],
   action: {
     label: 'Download CV',
     url: '/cv.pdf',
     downloadedFileName: 'Omer\'s CV.pdf',
   },
-  links: [facebook({ url: 'https://www.facebook.com/MdotOmer' }), github({ url: 'https://github.com/MdotO' }), linkedin({ url: 'https://www.linkedin.com/in/omer-raza-aa045219a/' })],
+  links: [googleScholar({url:"https://scholar.google.com/citations?user=oPbPzGgAAAAJ&hl=en"}),
+   github({ url: 'https://github.com/MdotO' }),
+  linkedin({ url: 'https://www.linkedin.com/in/omer-raza-aa045219a/' }),
+  facebook({ url: 'https://www.facebook.com/MdotOmer' }), 
+  ],
 } as const satisfies ReadonlyDeep<MainSection>;
 
 export default mainSectionData;

@@ -25,6 +25,10 @@ export const facebook = createLinkFactory({
   icon: 'fa6-brands:facebook-f',
 });
 
+export const googleScholar = createLinkFactory({
+  name:"Google Scholar",
+  icon:"fa6-brands:google-scholar"
+})
 export const linkedin = createLinkFactory({
   name: 'LinkedIn',
   icon: 'fa6-brands:linkedin-in',

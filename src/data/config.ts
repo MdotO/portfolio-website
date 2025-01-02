@@ -11,7 +11,8 @@ const config = {
     },
   },
   meta: {
-    title: 'Omer Raza - Machine Learning Researcher & Engineer',
+    // title: 'Omer Raza - Machine Learning Researcher & Engineer',
+    title:'Omer Raza - Site Work in Progress',
     description:
       'ML enthusiast with prime focus towards research and secondary focus towards ML Engineering & concommitant Software Engineering',
     faviconPath: '/src/assets/my-image.jpeg',

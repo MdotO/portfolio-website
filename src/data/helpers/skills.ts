@@ -123,6 +123,63 @@ export const react = createSkillFactory({
   url: 'https://reactjs.org/',
 });
 
+
+export const aws = createSkillFactory({
+  name: 'AWS',
+  icon: 'simple-icons:amazonaws',
+  iconColor: '#FF9900',
+  url: 'https://aws.amazon.com/',
+});
+
+export const pytorch = createSkillFactory({
+  name: 'PyTorch',
+  icon: 'simple-icons:pytorch',
+  iconColor: '#EE4C2C',
+  url: 'https://pytorch.org/',
+});
+
+export const python = createSkillFactory({
+  name: 'Python',
+  icon: 'simple-icons:python',
+  iconColor: '#3776AB',
+  url: 'https://python.org/',
+});
+export const javascript = createSkillFactory({
+  name: 'JS',
+  icon: 'simple-icons:javascript',
+  iconColor: '#F7DF1E',
+  url: 'https://www.javascript.com/',
+});
+
+export const cpp = createSkillFactory({
+  name: 'C++',
+  icon: 'simple-icons:cplusplus',
+  iconColor: '#00599C',
+  url: 'https://www.cplusplus.com/',
+});
+
+export const tensorflow = createSkillFactory({
+  name: 'TensorFlow',
+  icon: 'simple-icons:tensorflow',
+  iconColor: '#FF6F00',
+  url: 'https://www.tensorflow.org/',
+});
+
+export const java = createSkillFactory({
+  name: 'Java',
+  icon: 'simple-icons:openjdk',
+  iconColor: '#52caf7',
+  url: 'https://www.java.com/',
+});
+
+export const sql = createSkillFactory({
+  name: 'SQL',
+  icon: 'simple-icons:mysql',
+  iconColor: '#4479A1',
+  url: 'https://www.mysql.com/',
+});
+
+
 export const reactQuery = createSkillFactory({
   name: 'React Query',
   icon: 'simple-icons:reactquery',

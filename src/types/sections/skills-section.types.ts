@@ -15,7 +15,7 @@ export interface SkillSet {
   /**
    * Title that will be displayed above the list of skills.
    */
-  title: string;
+  title?: string;
 
   /**
    * List of skills with or without levels.

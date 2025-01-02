@@ -3,21 +3,30 @@ import type { ReadonlyDeep } from 'type-fest';
 import {
   apolloGraphql,
   astro,
+  aws,
   chakraUi,
+  cpp,
   cypress,
   eslint,
   firebase,
+  java,
+  javascript,
   mongoDb,
   nestJs,
   pnpm,
   postgreSql,
   prettier,
+  python,
+  pytorch,
   react,
   sass,
+  sql,
   supabase,
   tailwindCss,
+  tensorflow,
   typescript,
 } from '../helpers/skills';
+import { levels } from 'astro/dist/core/logger/core';
 
 const skillsSectionData = {
   config: {
@@ -28,50 +37,36 @@ const skillsSectionData = {
   },
   skillSets: [
     {
-      title: 'I already know',
       skills: [
+        pytorch({level: 4}),
+        tensorflow({level: 2, description: "Need to relearn a few things"}),
+        aws({level:3, description:"Mainly SageMaker"}),
+        
+        python({level:4}),
+        javascript({level:3,description:"Will need to freshen up"}),
         react({
-          level: 5,
-          description:
-            'Proin ut erat sed massa tempus suscipit. Mauris efficitur nunc sem, nec scelerisque ligula bibendum ut.',
-        }),
-        typescript({
-          level: 4,
-          description: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
-        }),
-        sass({
-          level: 4,
-          description: 'Nulla interdum pellentesque ultricies. Ut id eros commodo, ultrices ligula eu, elementum ante.',
-        }),
-        chakraUi({ level: 5 }),
-        tailwindCss({ level: 3 }),
-        prettier({ level: 5 }),
-        eslint({
-          level: 4,
-          description:
-            'Nulla tempor turpis at vehicula pharetra. Vestibulum tellus tortor, commodo et suscipit id, lobortis id nunc.',
-        }),
-        nestJs({
           level: 3,
           description:
-            'Praesent feugiat ultricies iaculis. In posuere vehicula odio, sed consequat velit porta viverra.',
+            'Includes React Native and Electron. Will need to freshen up',
         }),
-        postgreSql({ level: 2 }),
-        mongoDb({ level: 1 }),
+        typescript({
+          level: 2,
+          description: 'Learning',
+        }),
+        cpp({level:3}),
+        java({level:2, description:"Includes Android Studio"}),
+        sql({level:3, description:"Need to freshen up!"}),
         firebase({ level: 1 }),
-        pnpm({ level: 3 }),
       ],
     },
-    {
-      title: 'I want to learn',
-      skills: [apolloGraphql(), astro(), supabase(), cypress()],
-    },
+
     {
       title: 'I speak',
       skills: [
-        { icon: 'circle-flags:pl', name: 'Polish - native' },
-        { icon: 'circle-flags:us', name: 'English - C1' },
-        { icon: 'circle-flags:es-variant', name: 'Spanish - B1' },
+        { icon: 'circle-flags:us', name: 'English - fluent' },
+        { icon: 'circle-flags:pk', name: 'Urdu - native' },
+        { icon: 'circle-flags:pk', name: 'Punjabi - C1' },
+
       ],
     },
   ],
