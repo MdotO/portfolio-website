@@ -25,6 +25,8 @@ import {
   tailwindCss,
   tensorflow,
   typescript,
+  electron,
+  nodeJs
 } from '../helpers/skills';
 import { levels } from 'astro/dist/core/logger/core';
 
@@ -49,9 +51,16 @@ const skillsSectionData = {
           description:
             'Includes React Native and Electron. Will need to freshen up',
         }),
+        electron({
+          level:2
+        }),
         typescript({
           level: 2,
           description: 'Learning',
+        }),
+        nodeJs({
+          level:3,
+          description:"Will need to freshen up"
         }),
         cpp({level:3}),
         java({level:2, description:"Includes Android Studio"}),

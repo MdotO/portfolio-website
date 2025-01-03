@@ -17,19 +17,128 @@ import {
   tailwindCss,
   typescript,
 } from '../helpers/skills';
+import { tag } from 'type-fest/source/opaque';
 
 const portfolioSectionData = {
   config: {
-    title: 'Projects',
+    title: 'Publications & Preprint',
     slug: 'projects',
-    icon: 'fa6-solid:rocket',
-    visible: false,
+    icon: 'fa6-solid:book-open',
+    visible: true,
     screenshots: {
       title: 'Screenshots',
       icon: 'fa6-solid:images',
     },
   },
-  projects: [
+  publications: [
+    {name:"FIRST: Teach A Reliable Large Language Model Through Efficient Trustworthy Distillation",
+
+      links:[website({url:"https://openreview.net/forum?id=IDXjH7Q8T4#discussion"})],
+      details:[
+        {label:"Contribution",value:["Second Author"]},
+        {label:"Status",value:"Accepted in EMNLP 2024"},
+      ],
+      description:`
+        - Pipeline for **efficient LLM training** for:
+          - Reduced Miscalibration **-10%**
+          - Improved Accuracy **+2.3%** 
+        - Distillation with trustworthy maximization process
+        - Substantially **reduced training data** size
+      `,
+      tagsList: {
+        tags:[{name:"Efficient LLM"},{name:"Llama"},{name:"NLP"}]
+      },
+    },
+    {name:"SR-TGAN: Smoke Removal with Temporal Generative Adversarial Models in Robot-assisted Surgery",
+
+      links:[website({url:"https://openreview.net/forum?id=7WcuEZjMT9#discussion"})],
+      details:[
+        {label:"Contribution",value:["Co-first Author"]},
+        {label:"Status",value:"Accepted in IEEE EMBS BHI 2024"},
+      ],
+      description:`
+        - **Improved smoke removal** in live surgical feeds using sequence of frames
+        - Separate Temporal Mechanisms compared in CycleGAN base skeleton:
+          - Attention
+          - Convolution
+          - LSTM 
+      `,
+      tagsList: {
+        tags:[{name:"Computer Vision"},{name:"CycleGAN"},{name:"Attention Mechanism"}, {name:"Medical Imaging"}]
+      },
+    },
+    {name:"CycleGAN with mutual information loss constraint generates structurally aligned CT images from functional EIT images",
+
+      links:[website({url:"https://ieeexplore.ieee.org/abstract/document/10340711"})],
+      details:[
+        {label:"Contribution",value:["First Author"]},
+        {label:"Status",value:"Accepted in IEEE EMBC 2023"},
+      ],
+      description:`
+        - Modified CycleGAN archictecture
+        - Converted low resolution EIT images to high resolution CT images 
+        - **Mutual Information loss** construction yielded **structurally aligned generated CT images** 
+      `,
+      tagsList: {
+        tags:[{name:"Computer Vision"},{name:"CycleGAN"},{name:"Mutual Information"}, {name:"Medical Imaging"} , {name:"Healthcare Diagnostics"}]
+      },
+    },
+    {name:"Prior information inference via Mutual Information constrained cycleGAN enhances EIT reconstruction",
+
+      links:[website({url:"https://www.techrxiv.org/doi/full/10.36227/techrxiv.172564151.14300206"})],
+      details:[
+        {label:"Contribution",value:["First Author"]},
+        {label:"Status",value:["Preprint TechRxiv","Results Pending IEEE JBH"]},
+      ],
+      description:`
+        - An **extension journal** paper of **IEEE EMBC paper** 
+        - Incorporates modified CycleGAN to infer **prior EIT image**
+        - Dynamic Prior yields a better **final reconstructed EIT image** 
+      `,
+      tagsList: {
+        tags:[{name:"Computer Vision"},{name:"CycleGAN"}, {name:"Medical Imaging"}]
+      },
+    },
+
+    {name:"Silicon Content Prediction in Blast Furnace via Machine Learning: A Comprehensive Processing and Modeling Pipeline",
+
+      links:[],
+      details:[
+        {label:"Contribution",value:["First Author"]},
+        {label:"Status",value:["Review Stage in MDPI Materials"]},
+
+      ],
+      description:`
+        - Forecast silicon content with **90 % accuracy** owing to:
+          - Comprehensive **data processing pipeline** for **large scale industrial data**
+          - Hyperparameter optimization
+          - Model Selection involving NN, Xgboost & Time series Models
+      `,
+      tagsList: {
+        tags:[{name:"Blast Furnace"}, {name:"Silicon Content"},{name:"Xgboost"},{name:"Time Series Models"}]
+      },
+    },
+    {name:"Surgical Blender: A Synthetic Datat Generator for Robot-Assisted Surgery",
+
+      links:[],
+      details:[
+        {label:"Contribution",value:["Second Author"]},
+        {label:"Status",value:"Results pending in CBM Journal"},
+      ],
+      description:`
+        - Experimented Improved metrics for CycleGAN using 
+          - Carefully crafted **synthetic data**
+          - Custom **IC & DC** Losses 
+        - Potential to **alleviate the load** for **acquiring real medical images** in training tasks like smoke removal 
+      `,
+      tagsList: {
+        tags:[{name:"Computer Vision"},{name:"CycleGAN"}, {name:"Medical Imaging"}]
+      },
+    },
+
+  ],
+  /*
+  projects:[
     {
       name: 'Golden Bulls',
       image: import('@/assets/portfolio/project-1.jpeg'),
@@ -122,8 +231,10 @@ const portfolioSectionData = {
         tags: [typescript(), jest(), firebase()],
       },
       links: [mockups({ url: '#' }), github({ url: '#' })],
+    
     },
-  ],
+  ],*/
+
 } as const satisfies ReadonlyDeep<PortfolioSection>;
 
 export default portfolioSectionData;

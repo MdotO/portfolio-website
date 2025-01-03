@@ -107,14 +107,14 @@ export interface TagsList {
   /**
    * [PDF] Text displayed before the list of tags.
    */
-  title: string;
+  title?: string;
 
   /**
    * Tags to be displayed within the list.
    * [WEB] Tags are displayed as gray blocks. All tag properties are used.
    * [PDF] Tags are displayed comma separated list. Only the `name` property are used.
    */
-  tags: Tag[];
+  tags?: Tag[];
 }
 
 export interface DownloadButton {

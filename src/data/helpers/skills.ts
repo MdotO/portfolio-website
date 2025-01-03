@@ -123,7 +123,12 @@ export const react = createSkillFactory({
   url: 'https://reactjs.org/',
 });
 
-
+export const nodeJs = createSkillFactory({
+  name:"ExpressJS",
+  icon:"simple-icons:nodedotjs",
+  iconColor:"#5FA04E",
+  url:"https://nodejs.org/en"
+})
 export const aws = createSkillFactory({
   name: 'AWS',
   icon: 'simple-icons:amazonaws',
@@ -164,6 +169,13 @@ export const tensorflow = createSkillFactory({
   iconColor: '#FF6F00',
   url: 'https://www.tensorflow.org/',
 });
+
+export const electron = createSkillFactory({
+  name:"Electron",
+  icon:"simple-icons:electron",
+  iconColor: "#47848F",
+  url: "https://www.electronjs.org/"
+})
 
 export const java = createSkillFactory({
   name: 'Java',

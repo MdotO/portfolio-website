@@ -13,73 +13,170 @@ import {
   tailwindCss,
   typescript,
   vue,
+  aws,
+  python,
+  pytorch,
+  electron,
+  mongoDb,
+  nodeJs,
+  javascript,
 } from '../helpers/skills';
 
 const experienceSectionData = {
   config: {
-    title: 'Work experience',
+    title: 'Jobs & Research',
     slug: 'experience',
     icon: 'fa6-solid:suitcase',
-    visible: false,
+    visible: true,
   },
   
   jobs: [
-    
     {
-      role: 'Senior front-end developer',
-      company: 'Google',
-      image: import('@/assets/logos/google-logo.jpg'),
-      dates: [new Date('2020-02'), null],
+      role: 'Research Assistant Machine Learning',
+      company: 'CIVS',
+      image: import('@/assets/logos/civs-logo-v2.jpg'),
+      dates: [new Date('2023-10'), null],
       description: `
-        - In tristique vulputate augue vel egestas.
-        - Quisque ac imperdiet tortor, at lacinia ex.
-        - Duis vel ex hendrerit, commodo odio sed, aliquam enim.
-        - Ut arcu nulla, tincidunt eget arcu eget, molestie vulputate nisi.
-        - Nunc malesuada leo et est iaculis facilisis.
-        - Fusce eu urna ut magna malesuada fringilla.
+        - **Silicon content prediction via ML in blast furnace**
+          - **90% Accuracy** 
+          - Research paper under review
+          - extension paper underway
+        - **Hearth erosion modeling**
+        - Implemented first principle heat transfer models (forward)
+          - Engineered optimization flow (inverse) 
       `,
       tagsList: {
         title: 'Technologies',
-        tags: [react(), nextJs(), typescript(), nx(), firebase()],
+        tags: [pytorch(), python()],
       },
-      links: [facebook({ url: '#' }), linkedin({ url: '#' })],
+      links: [website({ url: 'https://www.pnw.edu/civs/' })],
     },
-    {
-      role: 'React.js developer',
-      company: 'Facebook',
-      image: import('@/assets/logos/facebook-logo.png'),
-      dates: [new Date('2019-04'), new Date('2020-02')],
-      description: `
-        - Aenean eget ultricies felis. Pellentesque dictum massa ut tellus eleifend, sed posuere massa mattis.
-        - Ut posuere massa lacus, eleifend molestie tortor auctor vel.
-        - Sed sed sollicitudin eros, id ultricies mi. Aliquam sodales elit vel ante tempor, non vehicula nibh facilisis.
-        - Cras feugiat ultricies maximus. Aliquam tristique ex odio, ac semper urna accumsan a.
-      `,
-      tagsList: {
-        title: 'Technologies',
-        tags: [react(), reactQuery(), chakraUi(), eslint()],
-      },
-      links: [website({ url: '#' }), instagram({ url: '#' })],
-    },
-    {
-      role: 'Junior front-end developer',
-      company: 'GitLab',
-      image: import('@/assets/logos/gitlab-logo.png'),
-      dates: [new Date('2016-09'), new Date('2019-04')],
-      description: `
-        Nulla volutpat justo ante, rhoncus posuere massa egestas in:
 
-        - Quisque pellentesque, dolor nec sollicitudin iaculis, sem velit consequat ligula, eget tempus ligula leo et est.
-        - Maecenas ut elit sit amet nibh maximus condimentum in nec lorem. Pellentesque tincidunt odio vel leo suscipit, in interdum mi gravida.
 
-        Donec non vulputate augue 🤓
+    {
+      role: 'Research Assistant (Remote)',
+      company: 'HKUST',
+      image: import('@/assets/logos/hkust-logo-v2.png'),
+      dates: [new Date('2024-04'), new Date('2024-08')],
+      description: `
+        NLP & Efficient LLM research with a publication in EMNLP 2024
       `,
       tagsList: {
         title: 'Technologies',
-        tags: [vue(), tailwindCss(), pnpm()],
+        tags: [pytorch(), python()],
       },
-      links: [twitter({ url: '#' }), github({ url: '#' })],
+      links: [website({ url: 'https://hkust.edu.hk/' })],
     },
+
+    {
+      role: 'Research Assistant (Remote)',
+      company: 'CUHK',
+      image: import('@/assets/logos/cuhk-logo.png'),
+      dates: [new Date('2022-10'), new Date('2023-04')],
+      description: `
+        - Computer Vision & Attention Mechanisms in Medical Imaging and Live Surgical Feeds.
+        - Research Published in IEEE
+      `,
+      tagsList: {
+        title: 'Technologies',
+        tags: [pytorch(), python()],
+      },
+      links: [website({ url: 'https://www.cuhk.edu.hk/english/index.html' })],
+    },
+
+    {
+      role: 'Machine Learning Engineer',
+      company: 'Lalamove',
+      image: import('@/assets/logos/lalamove-logo.jpg'),
+      dates: [new Date('2022-03-07'), new Date('2023-06-31')],
+      description: `
+        - Improved **image localization & detection models** for accurate market penetration count 
+        - Developed image detection models, **OCR & clustering models** for real-time **license plate number detection**. 
+        - Improved **image localization & detection** models for accurate market penetration counts. 
+        - Established data pipeline, modeling and deployment flow for **risk assessment models** to **predict fraud** 
+        - Received the **highest bonus** in the year (4 people among 150 in the office) 
+      `,
+      tagsList: {
+        title: 'Technologies',
+        tags: [aws(), pytorch(), python()],
+      },
+      links: [website({ url: 'https://www.lalamove.com/en-hk/' }), linkedin({ url: 'https://www.linkedin.com/company/lalamove/' })],
+    },
+    {
+      role: 'Software & Machine Learning Engineer',
+      company: 'Gense Technologies',
+      image: import('@/assets/logos/gense-logo.jpg'),
+      dates: [new Date('2020-11'), new Date('2022-02')],
+      description: `
+        - Developed LSTM and Conv1D models for **breathing waveform pattern** classification. 
+        - Developed & deployed **EIT Amplitude Image Classifier** using two distinct iterative improvement approaches 
+        - Developed & deployed **Gense Mobile App** 
+          - User account Management
+          - Live Test sync with Backend Server
+          - Test results storage & visualization
+        - Published a research paper in IEEE
+      `,
+      tagsList: {
+        title: 'Technologies',
+        tags: [react(), pytorch(),python()],
+      },
+      links: [website({ url: 'https://www.gensetechnologies.com/' }), linkedin({ url: 'https://www.linkedin.com/company/gensetech/' })],
+    },
+    {
+      role: 'Frontend Developer - Commissioned Work',
+      company: 'Beardbee',
+      image: import('@/assets/logos/beardbee-logo-v4.jpg'),
+      dates: [new Date('2020-02'), new Date('2020-04')],
+      description: `
+        - Worked on **User Input UI** of a charging system 
+        - Produced maintainable, reusable and and portable code using Elrtcon & React for:
+            - Web
+            - Desktop
+            - Mobile (IOS & Android) 
+      `,
+
+      tagsList: {
+        title: 'Technologies',
+        tags: [react(), electron()],
+      },
+      links: [website({ url: 'https://www.beardbee.com/' })],
+    },
+
+    {
+      role: 'Tech Intern - Full Stack Developer',
+      company: 'Lalamove',
+      image: import('@/assets/logos/lalamove-logo.jpg'),
+      dates: [new Date('2019-06-01'), new Date('2019-08-01')],
+      description: `
+        - **Refactored microservice** responsible for grouping orders, reading client inputs
+          and forming routes
+        - Microservice in various countries and cities like Malaysia, India & Bangkok
+      `,
+      tagsList: {
+        title: 'Technologies',
+        tags: [aws(), pytorch(), python()],
+      },
+      links: [website({ url: 'https://www.lalamove.com/en-hk/' }), linkedin({ url: 'https://www.linkedin.com/company/lalamove/' })],
+    },
+
+    {
+      role: 'Tech Intern - Backend Developer',
+      company: 'GoTalents',
+      image: import('@/assets/logos/gotalents-logo-2.jpg'),
+      dates: [new Date('2017-12'), new Date('2018-03')],
+      description: `
+        - Backend database & functionality setup 
+          - basic user notification & news feed
+          - location mapping
+          - messaging
+      `,
+
+      tagsList: {
+        title: 'Technologies',
+        tags: [mongoDb(), nodeJs(), javascript()],
+      },
+      links: [linkedin({ url: 'https://www.linkedin.com/company/gotalentsglobal/' })],
+    }
   ],
 } as const satisfies ReadonlyDeep<ExperienceSection>;
 

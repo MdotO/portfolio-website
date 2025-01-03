@@ -21,10 +21,10 @@ const mainSectionData = {
   ],
 
   description:
-    '[WIP - Currently Working on Populating my website. Current Available content is accurate]'
-    /*Research-Oriented Machine Learning enthusiast with a robust background in Software Engineering and MLOps.\
-    Eager to contribute to cutting-edge ML research.\
-    \nFeel free to connect on my social networks,collaborate or just geek out over ML in general!'*/,
+    // '[WIP - Currently Working on Populating my website. Current Available content is accurate]'
+    `**Machine Learning Researchist\nRobust background in Software Engineering and MLOps.\
+    \nEager to contribute to cutting-edge ML research.\
+    \nFeel free to connect on my social networks, collaborate or just geek out over ML!**`,
   tags: [{ name: 'Open for Research collaboration' }, { name: 'Machine Learning' }, { name: 'Artificial Intelligence' }],
   action: {
     label: 'Download CV',

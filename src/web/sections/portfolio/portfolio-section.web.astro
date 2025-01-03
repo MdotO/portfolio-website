@@ -7,11 +7,12 @@ import Project from './project.astro';
 
 export interface Props extends PortfolioSection {}
 
-const { config, projects } = Astro.props;
+const { config, projects,publications } = Astro.props;
 ---
 
 <SectionCard {...config}>
   <DividedList>
-    {projects.flatMap((project) => [<Project {...project} screenshotsConfig={config.screenshots} />, <Divider />])}
+      {publications.flatMap((project) => [<Project {...project} screenshotsConfig={config.screenshots} />, <Divider />])}
+    <!-- {projects.flatMap((project) => [<Project {...project} screenshotsConfig={config.screenshots} />, <Divider />])} -->
   </DividedList>
 </SectionCard>

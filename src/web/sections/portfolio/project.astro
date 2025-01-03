@@ -33,7 +33,7 @@ const screenshotsTooltip = screenshotsConfig?.title || 'Screenshots';
           <div class="flex w-full justify-between">
             <div>
               <Typography variant="item-title">{name}</Typography>
-              <Timestamp dates={dates} />
+              <!-- <Timestamp dates={dates} />:null -->
             </div>
             <div class="flex gap-2">
               {links.map((link) => <LinkButton {...link} />)}
