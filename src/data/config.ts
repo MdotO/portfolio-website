@@ -14,7 +14,7 @@ const config = {
     title: 'Omer Raza - Machine Learning Researcher & Engineer',
     description:
       'ML enthusiast with prime focus towards research and secondary focus towards ML Engineering & concommitant Software Engineering',
-    faviconPath: '/src/assets/prism.jpg',
+    faviconPath: '/src/assets/my-image.jpeg',
   },
   pdf: {
     footer:
