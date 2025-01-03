@@ -13,7 +13,7 @@ const educationSectionData = {
     {
       title: 'Masters degree in Computer Science',
       institution: 'Purdue University Northwest',
-      image: import('@/assets/logos/purdue.jpg'),
+      image: import('@/assets/logos/Purdue.jpg'),
       dates: [new Date('2023.09'), new Date('2025.05')],
       description: '• 4.0 GPA thus far    ¯\_(ツ)_/¯',
       links: [website({ url: 'https://www.pnw.edu/' })],
