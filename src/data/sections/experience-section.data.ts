@@ -39,11 +39,13 @@ const experienceSectionData = {
       description: `
         - **Silicon content prediction via ML in blast furnace**
           - **90% Accuracy** 
-          - Research paper under review
-          - extension paper underway
+          - Research paper accepted
+          - Energy efficiency because of good silicon predictability implies **immense economic impact.** 
         - **Hearth erosion modeling**
-        - Implemented first principle heat transfer models (forward)
-          - Engineered optimization flow (inverse) 
+          - Implemented first principle heat transfer models (forward)
+          - Engineered optimization flow (inverse process) via tuning, choosing step sizes, making manifolds smooth and choosing the best optimization algorithms 
+          - ML state models and ROMs used fasten computation from **5-10 minutes per 1 forward iteration to 10 seconds** 
+          - Research paper underway
       `,
       tagsList: {
         title: 'Technologies',
@@ -90,10 +92,9 @@ const experienceSectionData = {
       image: import('@/assets/logos/lalamove-logo.jpg'),
       dates: [new Date('2022-03-07'), new Date('2023-06-31')],
       description: `
-        - Improved **image localization & detection models** for accurate market penetration count 
-        - Developed image detection models, **OCR & clustering models** for real-time **license plate number detection**. 
-        - Improved **image localization & detection** models for accurate market penetration counts. 
-        - Established data pipeline, modeling and deployment flow for **risk assessment models** to **predict fraud** 
+        - Improved **image localization & detection models** for accurate market penetration count - **90% accuracy & 70,000 USD savings**
+        - Developed image detection models, **OCR & clustering models** for real-time **license plate number detection - prompt bonus delivery and minimal manual intervention with associated costs**
+        - Established data pipeline, modeling and deployment flow for **risk assessment models** to **predict fraud - prototype deployed (0.95 F1 score) that handled tens of thousands of transactions daily.**
         - Received the **highest bonus** in the year (4 people among 150 in the office) 
       `,
       tagsList: {
@@ -108,9 +109,9 @@ const experienceSectionData = {
       image: import('@/assets/logos/gense-logo.jpg'),
       dates: [new Date('2020-11'), new Date('2022-02')],
       description: `
-        - Developed LSTM and Conv1D models for **breathing waveform pattern** classification. 
-        - Developed & deployed **EIT Amplitude Image Classifier** using two distinct iterative improvement approaches 
-        - Developed & deployed **Gense Mobile App** 
+        - Developed LSTM and Conv1D models for **breathing waveform pattern** classification. - **improved final EIT lung diagnosis**
+        - Developed & deployed **EIT Amplitude Image Classifier** using two distinct iterative improvement approaches - **improved final EIT diagnosis**.
+        - Developed & deployed **[Gense Mobile App](https://play.google.com/store/apps/details?id=com.gensetech.genseappsp&hl=en_US)**
           - User account Management
           - Live Test sync with Backend Server
           - Test results storage & visualization
@@ -129,7 +130,7 @@ const experienceSectionData = {
       dates: [new Date('2020-02'), new Date('2020-04')],
       description: `
         - Worked on **User Input UI** of a charging system 
-        - Produced maintainable, reusable and and portable code using Elrtcon & React for:
+        - Produced maintainable, reusable and and portable code using Electron & React for:
             - Web
             - Desktop
             - Mobile (IOS & Android) 

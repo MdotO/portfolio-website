@@ -31,11 +31,30 @@ const portfolioSectionData = {
     },
   },
   publications: [
+
+    {name:"Silicon Content Prediction in Blast Furnace via Machine Learning: A Comprehensive Processing and Modeling Pipeline",
+
+      links:[website({url:"https://www.mdpi.com/1996-1944/18/3/632"})],
+      details:[
+        {label:"Contribution",value:["First Author"]},
+        {label:"Status",value:["Accepted in MDPI Materials Journal Special Edition 2025"]},
+
+      ],
+      description:`
+        - Forecast silicon content with **90 % accuracy** owing to:
+          - Comprehensive **data processing pipeline** for **large scale industrial data**
+          - Hyperparameter optimization
+          - Model Selection involving NN, Xgboost & Time series Models
+      `,
+      tagsList: {
+        tags:[{name:"Blast Furnace"}, {name:"Silicon Content"},{name:"Xgboost"},{name:"Time Series Models"}]
+      },
+    },
     {name:"FIRST: Teach A Reliable Large Language Model Through Efficient Trustworthy Distillation",
 
       links:[website({url:"https://openreview.net/forum?id=IDXjH7Q8T4#discussion"})],
       details:[
-        {label:"Contribution",value:["Second Author"]},
+        {label:"Contribution",value:["Co-Author"]},
         {label:"Status",value:"Accepted in EMNLP 2024"},
       ],
       description:`
@@ -53,7 +72,7 @@ const portfolioSectionData = {
 
       links:[website({url:"https://openreview.net/forum?id=7WcuEZjMT9#discussion"})],
       details:[
-        {label:"Contribution",value:["Co-first Author"]},
+        {label:"Contribution",value:["Equal contribution Co-first Author"]},
         {label:"Status",value:"Accepted in IEEE EMBS BHI 2024"},
       ],
       description:`
@@ -62,6 +81,7 @@ const portfolioSectionData = {
           - Attention
           - Convolution
           - LSTM 
+        - •	Better smoke removal than **benchmark DeSmoke CycleGAN** model based on the **JNBM & FADE metrics.**
       `,
       tagsList: {
         tags:[{name:"Computer Vision"},{name:"CycleGAN"},{name:"Attention Mechanism"}, {name:"Medical Imaging"}]
@@ -78,6 +98,7 @@ const portfolioSectionData = {
         - Modified CycleGAN archictecture
         - Converted low resolution EIT images to high resolution CT images 
         - **Mutual Information loss** construction yielded **structurally aligned generated CT images** 
+        - **Normalized Mutual Information (NMI)** gain from **0.2600 to 0.2621, (p<0.0001)** from vanilla approach 
       `,
       tagsList: {
         tags:[{name:"Computer Vision"},{name:"CycleGAN"},{name:"Mutual Information"}, {name:"Medical Imaging"} , {name:"Healthcare Diagnostics"}]
@@ -94,30 +115,13 @@ const portfolioSectionData = {
         - An **extension journal** paper of **IEEE EMBC paper** 
         - Incorporates modified CycleGAN to infer **prior EIT image**
         - Dynamic Prior yields a better **final reconstructed EIT image** 
+        - NMI gain from **0.45 to 0.49** from vanilla approach  
       `,
       tagsList: {
         tags:[{name:"Computer Vision"},{name:"CycleGAN"}, {name:"Medical Imaging"}]
       },
     },
 
-    {name:"Silicon Content Prediction in Blast Furnace via Machine Learning: A Comprehensive Processing and Modeling Pipeline",
-
-      links:[],
-      details:[
-        {label:"Contribution",value:["First Author"]},
-        {label:"Status",value:["Review Stage in MDPI Materials"]},
-
-      ],
-      description:`
-        - Forecast silicon content with **90 % accuracy** owing to:
-          - Comprehensive **data processing pipeline** for **large scale industrial data**
-          - Hyperparameter optimization
-          - Model Selection involving NN, Xgboost & Time series Models
-      `,
-      tagsList: {
-        tags:[{name:"Blast Furnace"}, {name:"Silicon Content"},{name:"Xgboost"},{name:"Time Series Models"}]
-      },
-    },
     {name:"Surgical Blender: A Synthetic Datat Generator for Robot-Assisted Surgery",
 
       links:[],
