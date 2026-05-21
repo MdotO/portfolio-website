@@ -31,11 +31,27 @@ const experienceSectionData = {
   },
   
   jobs: [
+    {      
+      role: 'Research Engineer III -  Machine Learning',
+      company: 'Eagleview',
+      image: import('@/assets/logos/eagleview.png'),
+      dates: [new Date('2025-10'), null],
+      description: `
+      - Project Lead to carve insights, risks and bespoke implementations in Gaussian Splatting based models for improving \
+      visual fidelity and downstream metrics in existing processes such as mesh/DSM generation and pose optimization.
+      - Streamlined and documented internal image processing library for use in traditional 3d reconstruction pipelines and ML pipelines such as Nerf
+      `,
+      tagsList: {
+        title: 'Technologies',
+        tags: [pytorch(), python(), aws(), javascript()],
+      },
+      links: [website({ url: 'https://www.eagleview.com' })]}
+      ,
     {
       role: 'Research Assistant Machine Learning',
       company: 'CIVS',
       image: import('@/assets/logos/civs-logo-v2.jpg'),
-      dates: [new Date('2023-10'), null],
+      dates: [new Date('2023-10'), new Date('2025-10')],
       description: `
         - **Silicon content prediction via ML in blast furnace**
           - **90% Accuracy** 
