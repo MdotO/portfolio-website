@@ -13,7 +13,7 @@ const mainSectionData = {
   fullName: 'Muhammad Omer Raza',
   role: 'Machine Learning Researcher & Engineer',
   details: [
-    { label: 'Phone', value: '219 238 8367', url: 'tel:219 238 8367' },
+    // { label: 'Phone', value: '219 238 8367', url: 'tel:219 238 8367' },
     { label: 'Email', value: 'raza12@purdue.edu', url: 'mailto:raza12@purdue.edu' },
     { label: 'From', value: 'Lahore, Pakistan' },
   ],
